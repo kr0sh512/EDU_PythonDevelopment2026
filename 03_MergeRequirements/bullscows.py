@@ -37,11 +37,13 @@ def gameplay(ask: Callable, inform: Callable, words: list[str]) -> int:
 
 
 def ask(prompt: str, valid: Optional[list[str]] = None) -> str:
-    ans = input(prompt)
+    print(cowsay(prompt))
+    ans = input()
 
     while valid and ans not in valid:
         print("Word not in the dictionary. Please try again.")
-        ans = input(prompt)
+        print(cowsay(prompt))
+        ans = input()
 
     return ans
 
