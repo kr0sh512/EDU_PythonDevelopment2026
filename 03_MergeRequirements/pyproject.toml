@@ -1,0 +1,10 @@
+[project]
+name = "bullscows"
+version = "0.1.0"
+description = "Bullscows game"
+dependencies = [
+    "python-cowsay",
+]
+
+[tool.setuptools]
+py-modules = ["bullscows"]
