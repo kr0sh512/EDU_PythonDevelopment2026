@@ -1,4 +1,4 @@
-import cowsay
+from cowsay import cowsay
 import random
 import argparse
 import urllib.request
@@ -47,7 +47,7 @@ def ask(prompt: str, valid: Optional[list[str]] = None) -> str:
 
 
 def inform(format_string: str, bulls: int, cows: int) -> None:
-    print(format_string.format(bulls, cows))
+    print(cowsay(format_string.format(bulls, cows)))
 
     return
 
